@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4371D13205DC6A20003D1E7 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4371D12205DC6A20003D1E7 /* CreateGoalVC.swift */; };
 		D4C3B7DF20586EA3006D709B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3B7DE20586EA3006D709B /* AppDelegate.swift */; };
 		D4C3B7E120586EA3006D709B /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3B7E020586EA3006D709B /* GoalsVC.swift */; };
 		D4C3B7E420586EA3006D709B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C3B7E220586EA3006D709B /* Main.storyboard */; };
 		D4C3B7E720586EA3006D709B /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4C3B7E520586EA3006D709B /* GoalPost.xcdatamodeld */; };
 		D4C3B7E920586EA3006D709B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C3B7E820586EA3006D709B /* Assets.xcassets */; };
 		D4C3B7EC20586EA3006D709B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C3B7EA20586EA3006D709B /* LaunchScreen.storyboard */; };
+		D4C3B7FA205ACE03006D709B /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3B7F9205ACE03006D709B /* GoalCell.swift */; };
+		D4C3B7FC205B346F006D709B /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3B7FB205B346F006D709B /* GoalType.swift */; };
+		D4FA744A207BE51E007F75BF /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA7449207BE51E007F75BF /* ViewControllerExtension.swift */; };
+		D4FA744C207BE9F0007F75BF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA744B207BE9F0007F75BF /* ViewExtension.swift */; };
+		D4FA744E207C17A2007F75BF /* FinishCreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA744D207C17A2007F75BF /* FinishCreateGoalVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4371D12205DC6A20003D1E7 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		D4C3B7DB20586EA3006D709B /* GoalPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C3B7DE20586EA3006D709B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4C3B7E020586EA3006D709B /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		D4C3B7E820586EA3006D709B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4C3B7EB20586EA3006D709B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4C3B7ED20586EA3006D709B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C3B7F9205ACE03006D709B /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		D4C3B7FB205B346F006D709B /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		D4FA7449207BE51E007F75BF /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		D4FA744B207BE9F0007F75BF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		D4FA744D207C17A2007F75BF /* FinishCreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishCreateGoalVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				D4C3B7E020586EA3006D709B /* GoalsVC.swift */,
+				D4371D12205DC6A20003D1E7 /* CreateGoalVC.swift */,
+				D4FA744D207C17A2007F75BF /* FinishCreateGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -81,6 +95,7 @@
 		D4C3B7F420586EEE006D709B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D4C3B7F9205ACE03006D709B /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +103,8 @@
 		D4C3B7F520586EF4006D709B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D4FA7449207BE51E007F75BF /* ViewControllerExtension.swift */,
+				D4FA744B207BE9F0007F75BF /* ViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -95,6 +112,7 @@
 		D4C3B7F620586FEB006D709B /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				D4C3B7FB205B346F006D709B /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -126,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Aboubakrine Niane";
 				TargetAttributes = {
 					D4C3B7DA20586EA3006D709B = {
@@ -171,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C3B7FA205ACE03006D709B /* GoalCell.swift in Sources */,
+				D4371D13205DC6A20003D1E7 /* CreateGoalVC.swift in Sources */,
+				D4FA744A207BE51E007F75BF /* ViewControllerExtension.swift in Sources */,
+				D4C3B7FC205B346F006D709B /* GoalType.swift in Sources */,
+				D4FA744E207C17A2007F75BF /* FinishCreateGoalVC.swift in Sources */,
 				D4C3B7E120586EA3006D709B /* GoalsVC.swift in Sources */,
 				D4C3B7DF20586EA3006D709B /* AppDelegate.swift in Sources */,
+				D4FA744C207BE9F0007F75BF /* ViewExtension.swift in Sources */,
 				D4C3B7E720586EA3006D709B /* GoalPost.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +237,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -220,6 +245,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -270,6 +296,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -277,6 +304,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

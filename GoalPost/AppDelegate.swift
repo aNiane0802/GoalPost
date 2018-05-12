@@ -20,7 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init()
         let goalsVC = GoalsVC()
         goalsVC.view.backgroundColor = UIColor.white
-        window?.rootViewController = UINavigationController.init(rootViewController: goalsVC)
+        let navigationVC = UINavigationController.init(rootViewController: goalsVC)
+        navigationVC.navigationBar.barTintColor = #colorLiteral(red: 0.4274509804, green: 0.737254902, blue: 0.3882352941, alpha: 1)
+        navigationVC.navigationBar.tintColor = .white
+        window?.rootViewController = navigationVC
         return true
     }
 
@@ -74,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+        container.viewContext.undoManager = UndoManager.init()
         return container
     }()
 
